@@ -137,6 +137,6 @@ df = pd.DataFrame(Time_vs_hitrate_list,
                   index=['assess_hr_DQN', 'assess_hr_LRU', 'assess_hr_LFU', 'assess_hr_MRU', 'assess_hr_Random'])
 # 每一个方法的列表长度为episode，x轴是episode
 print(df)
-with open('C:/Users/tashm/Desktop/毕业设计180910437/DRLCaching_python/hitrate_test/hitrate_time/zipf_500id_1000000req3.pkl',
+with open('/DRLCaching_python/hitrate_test/hitrate_time/zipf_500id_1000000req3.pkl',
           'wb') as f:
     pickle.dump(df, f)

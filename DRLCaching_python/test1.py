@@ -6,7 +6,7 @@ from cache.DataLoader import DataLoaderPintos
 
 if __name__ == "__main__":
     # cache
-    dataloader = DataLoaderPintos(["C:/Users/tashm/Desktop/毕业设计180910437/DRLCaching_python/dataset_and_generate/zipf_200id_1000000req.csv"])
+    dataloader = DataLoaderPintos(["/DRLCaching_python/dataset_and_generate/zipf_200id_1000000req.csv"])
     env = Cache(dataloader, 50
                 , feature_selection=('Base',)
                 , reward_params=dict(name='our', alpha=0.5, psi=10, mu=1, beta=0.3)

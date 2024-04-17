@@ -138,6 +138,6 @@ cachesize_vs_hitrate = [assess_hr_DQN, assess_hr_LRU, assess_hr_LFU, assess_hr_M
 df = pd.DataFrame(cachesize_vs_hitrate, columns=['5', '25', '50', '100', '150', '200', '250'],
                   index=['assess_hr_DQN', 'assess_hr_LRU', 'assess_hr_LFU', 'assess_hr_MRU', 'assess_hr_Random'])
 print(df)
-with open('C:/Users/tashm/Desktop/毕业设计180910437/DRLCaching_python/hitrate_test/hitrate_capacity/2schemes.pkl',
+with open('/DRLCaching_python/hitrate_test/hitrate_capacity/2schemes.pkl',
           'wb') as f:
     pickle.dump(df, f)

@@ -160,6 +160,6 @@ varfiles_vs_hitrate = [assess_hr_DQN, assess_hr_LRU, assess_hr_LFU, assess_hr_MR
 df = pd.DataFrame(varfiles_vs_hitrate, columns=['200ids', '250ids', '300ids', '350ids', '400ids', '450ids', '500ids'],
                     index=['assess_hr_DQN', 'assess_hr_LRU', 'assess_hr_LFU', 'assess_hr_MRU', 'assess_hr_Random'])
 print(df)
-with open('C:/Users/tashm/Desktop/毕业设计180910437/DRLCaching_python/hitrate_test/hitrate_variousIDs/zipf_200-500id2.pkl',
+with open('/DRLCaching_python/hitrate_test/hitrate_variousIDs/zipf_200-500id2.pkl',
             'wb') as f:
     pickle.dump(df, f)
